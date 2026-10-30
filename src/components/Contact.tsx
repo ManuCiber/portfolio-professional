@@ -143,7 +143,7 @@ export const Contact: React.FC = () => {
                     GitHub
                   </span>
                   <span className="text-sm sm:text-base font-semibold text-white">
-                    github.com/CarlosTolentino
+                    github.com/ManuCiber
                   </span>
                 </div>
               </div>
@@ -229,7 +229,7 @@ export const Contact: React.FC = () => {
                     id="subject"
                     value={formState.subject}
                     onChange={(e) => setFormState({ ...formState, subject: e.target.value })}
-                    placeholder="Ej. Oportunidad laboral / Proyecto backend"
+                    placeholder="Ej. Oportunidad laboral / Proyecto FullStack o Backend"
                     className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 placeholder-slate-500 text-sm focus:border-cyan-500 focus:outline-none"
                   />
                 </div>

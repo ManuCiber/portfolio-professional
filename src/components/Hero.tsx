@@ -43,30 +43,26 @@ export const Hero: React.FC = () => {
 
             {/* Value Proposition */}
             <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-              {personalInfo.headline} Graduado de <strong className="text-white font-medium">Licenciatura en Informática en la UASD</strong> con 1 año de experiencia práctica demostrable aplicando arquitectura por capas, principios SOLID y bases de datos relacionales.
+              {personalInfo.headline} Graduado de <strong className="text-white font-medium">Licenciatura en Informática en la UASD</strong> con experiencia demostrable construyendo microservicios en Java/Spring Boot, APIs en Node.js y aplicaciones web modulares con Next.js 15 y React.
             </p>
 
             {/* Quick Tech Highlights Pills */}
             <div className="flex flex-wrap gap-2 pt-1">
               {[
-                { name: 'Node.js', type: 'backend' },
-                { name: 'Express', type: 'backend' },
-                { name: 'NestJS', type: 'backend' },
-                { name: 'PostgreSQL', type: 'db' },
-                { name: 'MongoDB', type: 'db' },
-                { name: 'TypeScript', type: 'lang' },
-                { name: 'Docker', type: 'devops' },
-                { name: 'React (Básico)', type: 'frontend' }
+                'Java / Spring Boot',
+                'Microservicios',
+                'Node.js & NestJS',
+                'PostgreSQL',
+                'MongoDB',
+                'Docker',
+                'Next.js 15',
+                'React & TS'
               ].map((tech) => (
                 <span
-                  key={tech.name}
-                  className={`px-2.5 py-1 text-xs font-mono rounded-md border transition-colors ${
-                    tech.type === 'frontend'
-                      ? 'bg-blue-950/30 border-blue-500/30 text-blue-300'
-                      : 'bg-slate-900 border-slate-800 text-slate-300 hover:border-cyan-500/40 hover:text-cyan-300'
-                  }`}
+                  key={tech}
+                  className="px-2.5 py-1 text-xs font-mono rounded-md border bg-slate-900 border-slate-800 text-slate-300 hover:border-cyan-500/40 hover:text-cyan-300 transition-colors"
                 >
-                  {tech.name}
+                  {tech}
                 </span>
               ))}
             </div>
@@ -96,7 +92,7 @@ export const Hero: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 transition-all"
-                  aria-label="Perfil de GitHub"
+                  aria-label="Perfil de GitHub (ManuCiber)"
                 >
                   <GithubIcon className="w-5 h-5" />
                 </a>
@@ -124,7 +120,7 @@ export const Hero: React.FC = () => {
                   <div className="w-3 h-3 rounded-full bg-rose-500/80" />
                   <div className="w-3 h-3 rounded-full bg-amber-500/80" />
                   <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
-                  <span className="ml-2 text-slate-400">carlos-backend-dev.ts</span>
+                  <span className="ml-2 text-slate-400">carlos-fullstack-dev.ts</span>
                 </div>
                 <div className="flex items-center gap-1.5 text-cyan-400">
                   <Terminal className="w-3.5 h-3.5" />
@@ -134,10 +130,10 @@ export const Hero: React.FC = () => {
 
               {/* Code Snippet */}
               <div className="font-mono text-xs sm:text-sm space-y-2 text-left">
-                <p className="text-slate-500">// Perfil y Enfoque de Ingeniería</p>
+                <p className="text-slate-500">// Perfil de Software & Enfoque Técnico</p>
                 <p>
                   <span className="text-purple-400">const</span>{' '}
-                  <span className="text-yellow-300">backendEngineer</span> = &#123;
+                  <span className="text-yellow-300">developerProfile</span> = &#123;
                 </p>
                 <div className="pl-4 space-y-1">
                   <p>
@@ -149,28 +145,28 @@ export const Hero: React.FC = () => {
                     <span className="text-emerald-300">'Lic. en Informática (UASD)'</span>,
                   </p>
                   <p>
-                    <span className="text-slate-400">primarySpecialty:</span>{' '}
-                    <span className="text-cyan-300">'Backend Development & APIs REST'</span>,
+                    <span className="text-slate-400">coreStrength:</span>{' '}
+                    <span className="text-cyan-300">'Backend & Microservicios (Dominio principal)'</span>,
                   </p>
                   <p>
-                    <span className="text-slate-400">architecture:</span> [
-                    <span className="text-emerald-300">'Controllers'</span>,{' '}
-                    <span className="text-emerald-300">'Services'</span>,{' '}
-                    <span className="text-emerald-300">'Repositories'</span>],
+                    <span className="text-slate-400">backendStack:</span> [
+                    <span className="text-teal-300">'Java Spring Boot'</span>,{' '}
+                    <span className="text-teal-300">'Node.js / NestJS'</span>,{' '}
+                    <span className="text-teal-300">'PostgreSQL'</span>],
                   </p>
                   <p>
-                    <span className="text-slate-400">databases:</span> [
-                    <span className="text-teal-300">'PostgreSQL'</span>,{' '}
-                    <span className="text-teal-300">'MongoDB'</span>,{' '}
-                    <span className="text-teal-300">'MySQL'</span>],
+                    <span className="text-slate-400">frontendPath:</span> [
+                    <span className="text-yellow-300">'Next.js 15'</span>,{' '}
+                    <span className="text-yellow-300">'React'</span>,{' '}
+                    <span className="text-yellow-300">'Tailwind CSS'</span>],
                   </p>
                   <p>
-                    <span className="text-slate-400">frontendSkills:</span>{' '}
-                    <span className="text-blue-300">'Básico (Integración, React, Next.js)'</span>,
+                    <span className="text-slate-400">goal:</span>{' '}
+                    <span className="text-cyan-400">'FullStack Developer con fuerte base en arquitectura'</span>,
                   </p>
                   <p>
                     <span className="text-slate-400">status:</span>{' '}
-                    <span className="text-teal-300">'Open to Backend Roles'</span>
+                    <span className="text-emerald-400">'Ready for Challenges'</span>
                   </p>
                 </div>
                 <p>&#125;;</p>
@@ -180,7 +176,7 @@ export const Hero: React.FC = () => {
               <div className="mt-5 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
                 <span className="flex items-center gap-1.5 text-emerald-400 font-medium">
                   <CheckCircle2 className="w-3.5 h-3.5" />
-                  Información Verificada
+                  GitHub: @ManuCiber
                 </span>
                 <span className="text-slate-500 font-mono">2018 - 2024 UASD</span>
               </div>

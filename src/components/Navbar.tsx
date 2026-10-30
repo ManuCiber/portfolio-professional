@@ -76,7 +76,7 @@ export const Navbar: React.FC = () => {
                 {personalInfo.shortName}
               </span>
               <span className="text-[11px] font-mono text-cyan-400/90 tracking-wide uppercase">
-                Backend Developer
+                Software Developer (FullStack & Backend)
               </span>
             </div>
           </a>
