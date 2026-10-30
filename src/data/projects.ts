@@ -2,18 +2,84 @@ import type { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: 'muestras-medicas',
+    title: 'Sistema de Gestión de Muestras Médicas',
+    role: 'Desarrollador FullStack',
+    category: 'fullstack',
+    summary: 'Aplicación web fullstack para la trazabilidad de inventario clínico, visitadores médicos y constancias de entrega con demo en vivo desplegado.',
+    description: 'Plataforma web desarrollada con Next.js 15 (App Router) y TypeScript para digitalizar y auditar el flujo de entrega de muestras médicas a profesionales de la salud. Integra control estricto de inventario, alertas de stock mínimo y emisión de constancias.',
+    highlights: [
+      'Desarrollo de aplicación web utilizando Next.js 15 (App Router), React, TypeScript y Tailwind CSS v4.',
+      'Implementación de una arquitectura modular basada en componentes reutilizables y tipado estricto con TypeScript.',
+      'Desarrollo de módulos para gestión de inventario, control de visitadores médicos, registro de entregas e historial de movimientos.',
+      'Implementación de formularios con React Hook Form y validación de esquemas mediante Zod.',
+      'Integración de Radix UI, Lucide React y Sonner para una interfaz moderna, accesible y responsiva.',
+      'Implementación de lógica de negocio para actualización automática de inventario, alertas de stock bajo y generación de constancias de entrega.',
+      'Proyecto preparado para integrar PostgreSQL, Supabase, autenticación y generación de reportes.'
+    ],
+    technologies: [
+      'Next.js 15 (App Router)',
+      'React',
+      'TypeScript',
+      'Tailwind CSS v4',
+      'Radix UI',
+      'React Hook Form',
+      'Zod',
+      'Sonner',
+      'PostgreSQL / Supabase'
+    ],
+    status: 'completed',
+    statusLabel: 'Proyecto Concluido / Demo en Vivo',
+    repoUrl: 'https://github.com/ManuCiber/Muestras--App',
+    demoUrl: 'https://muestras-app.vercel.app',
+    isFeatured: true
+  },
+  {
+    id: 'cooperativa-ms',
+    title: 'Cooperativa-MS (Arquitectura de Microservicios)',
+    role: 'Desarrollador Backend Java',
+    category: 'backend',
+    summary: 'Plataforma empresarial de gestión cooperativa distribuida en microservicios independientes con Java, Spring Boot, Spring Cloud y Docker.',
+    description: 'Ecosistema distribuido y escalable diseñado para el sector financiero cooperativo con microservicios independientes, orquestación centralizada, gateway y bases de datos aisladas por servicio.',
+    highlights: [
+      'Desarrollo de una plataforma de gestión cooperativa basada en arquitectura de microservicios con Java y Spring Boot.',
+      'Implementación de servicios REST independientes: socios, directivas, cuentas, aportaciones, transacciones, ahorros programados, préstamos, garantías, pagos y usuarios.',
+      'Descubrimiento y registro de servicios dinámico con Netflix Eureka y configuración centralizada con Spring Cloud Config.',
+      'Enrutamiento inteligente, filtros de seguridad y API Gateway con Spring Cloud Gateway.',
+      'Diseño de persistencia con PostgreSQL (bases de datos independientes por microservicio) y migraciones de esquema con Flyway.',
+      'Uso de MongoDB para el almacenamiento de configuraciones funcionales.',
+      'Módulo compartido (common-web) para estandarización de respuestas y manejo global de excepciones.',
+      'Containerización completa de todos los servicios y bases de datos mediante Docker y Docker Compose.'
+    ],
+    technologies: [
+      'Java',
+      'Spring Boot',
+      'Spring Cloud Gateway',
+      'Netflix Eureka',
+      'PostgreSQL',
+      'Flyway',
+      'MongoDB',
+      'Docker & Docker Compose'
+    ],
+    status: 'completed',
+    statusLabel: 'Microservicios Funcionales Concluidos',
+    repoUrl: 'https://github.com/ManuCiber/Cooperativa-MS',
+    demoUrl: '',
+    isFeatured: true
+  },
+  {
     id: 'api-usuarios-blog',
     title: 'Sistema de Gestión de Usuarios y Blog (API REST)',
-    role: 'Desarrollador Backend (Especialidad)',
+    role: 'Desarrollador Backend',
     category: 'backend',
-    summary: 'API REST estructurada en capas limpias con autenticación JWT, control de acceso basado en roles (RBAC) y modelado en MongoDB.',
+    summary: 'API REST estructurada en 4 capas limpias con autenticación JWT, control de acceso basado en roles (RBAC) y modelado en MongoDB.',
     description: 'Servicio backend enfocado en la robustez, seguridad y separación de responsabilidades para aplicaciones de contenido colaborativo. Implementa un patrón de capas desacopladas con control granular de permisos.',
     highlights: [
-      'Arquitectura en 4 capas: Controllers, Services, Repositories y Middlewares con separación estricta de responsabilidades.',
-      'Autenticación sin estado mediante JSON Web Tokens (JWT) y autorización basada en roles (RBAC).',
-      'Operaciones CRUD completas para gestión de usuarios, asignación de roles y artículos.',
-      'Modelado de esquemas y validación de datos en MongoDB utilizando Mongoose.',
-      'Middlewares personalizados para captura unificada de excepciones y validación de peticiones.'
+      'Desarrollo de una API REST con Node.js, Express, TypeScript y MongoDB.',
+      'Implementación de autenticación con JWT y autorización basada en roles (RBAC).',
+      'Desarrollo de operaciones CRUD completas para usuarios, roles y publicaciones de blog.',
+      'Uso de Mongoose para el modelado de datos y persistencia en MongoDB.',
+      'Implementación de una arquitectura en capas (Controllers, Services, Repositories y Middlewares) con separación de responsabilidades.'
     ],
     technologies: [
       'Node.js',
@@ -26,87 +92,31 @@ export const projects: Project[] = [
     ],
     status: 'completed',
     statusLabel: 'API REST Funcional Concluida',
-    repoUrl: 'https://github.com/CarlosTolentino', // [EDITABLE: Reemplazar con enlace directo al repositorio]
-    demoUrl: '', // [EDITABLE: Documentación Swagger / Postman si aplica]
-    isFeatured: true
-  },
-  {
-    id: 'muestras-medicas',
-    title: 'Sistema de Gestión de Muestras Médicas',
-    role: 'Desarrollador Web (Lógica & Integración Frontend)',
-    category: 'fullstack',
-    summary: 'Aplicación web orientada a la trazabilidad de inventario clínico, visitadores médicos y constancias de entrega, integrando frontend básico con lógica de datos.',
-    description: 'Plataforma web desarrollada con Next.js 15 y TypeScript enfocada en digitalizar el flujo de muestras médicas. Desarrollé la lógica de control de inventario, alertas y emisión de constancias, conectando interfaces funcionales con el modelo de datos.',
-    highlights: [
-      'Implementación de módulos para gestión de inventario, control de visitadores médicos, registro de entregas e historial.',
-      'Lógica de negocio para actualización automática de inventario, alertas de stock bajo y generación de constancias.',
-      'Formularios reactivos con React Hook Form y validación de esquemas con Zod.',
-      'Integración de interfaz accesible con componentes de Radix UI, Lucide Icons y notificaciones con Sonner.',
-      'Estructura preparada para integración con PostgreSQL, Supabase y autenticación.'
-    ],
-    technologies: [
-      'Next.js 15 (App Router)',
-      'React',
-      'TypeScript',
-      'Tailwind CSS',
-      'React Hook Form',
-      'Zod',
-      'PostgreSQL / Supabase'
-    ],
-    status: 'completed',
-    statusLabel: 'Proyecto Concluido / Listo para despliegue',
-    repoUrl: 'https://github.com/CarlosTolentino', // [EDITABLE: Reemplazar con el enlace directo al repositorio]
-    demoUrl: '', // [EDITABLE: Reemplazar con el enlace de demo cuando esté alojado]
-    isFeatured: true
-  },
-  {
-    id: 'cooperativa-microservicios',
-    title: 'Sistema de Gestión de Cooperativa',
-    role: 'Desarrollador Backend (Arquitectura)',
-    category: 'in-progress',
-    summary: 'Arquitectura distribuida en microservicios orientada a la administración de cuentas, préstamos y aportes cooperativistas.',
-    description: 'Proyecto enfocado en la aplicación de servicios independientes, desacoplados y escalables para el sector financiero cooperativo, implementando el stack Java/Spring Boot con persistencia relacional.',
-    highlights: [
-      'Diseño conceptual de microservicios: gestión de socios, cuentas de ahorro y solicitudes de crédito.',
-      'Implementación del framework Spring Boot y Spring Data JPA para la capa de persistencia.',
-      'Configuración de contenedores Docker para aislamiento de dependencias y base de datos PostgreSQL.',
-      'Definición de contratos de API REST para la comunicación entre servicios.'
-    ],
-    technologies: [
-      'Java',
-      'Spring Boot',
-      'Microservicios',
-      'PostgreSQL',
-      'Docker',
-      'Spring Data JPA'
-    ],
-    status: 'in-progress',
-    statusLabel: 'En Desarrollo / Arquitectura',
-    repoUrl: '', // [EDITABLE: Colocar URL cuando el repositorio sea público]
+    repoUrl: 'https://github.com/ManuCiber/Servicies-Usuarios-API',
     demoUrl: '',
-    isFeatured: false
+    isFeatured: true
   },
   {
     id: 'sistema-facturacion',
-    title: 'Sistema de Facturación y Comprobantes',
-    role: 'Desarrollador Backend',
+    title: 'Sistema de Facturación',
+    role: 'Desarrollador de Software',
     category: 'in-progress',
-    summary: 'Módulo de cálculo fiscal, control de comprobantes, catálogo de productos y registro de ventas.',
-    description: 'Servicio backend enfocado en automatizar la generación de facturas comerciales, seguimiento de cobros y emisión de reportes contables con integridad transaccional.',
+    summary: 'Módulo de cálculo fiscal, control de facturación, comprobantes comerciales y registro de ventas.',
+    description: 'Solución enfocada en automatizar la generación de facturas comerciales, seguimiento de cobros y emisión de reportes con integridad transaccional.',
     highlights: [
-      'Diseño del esquema de base de datos relacional con reglas de integridad para comprobantes.',
-      'Lógica de cálculo matemático para subtotal, impuestos y retenciones fiscales.',
-      'Módulo de exportación o preparación para constancias de pago.'
+      'Estructura de proyecto para administración y emisión de facturación.',
+      'Lógica para cálculo de montos, impuestos y registros comerciales.',
+      'Integración con repositorio oficial en GitHub.'
     ],
     technologies: [
-      'TypeScript',
+      'JavaScript',
       'Node.js',
-      'PostgreSQL',
-      'REST API'
+      'REST API',
+      'PostgreSQL'
     ],
-    status: 'planned',
-    statusLabel: 'En Planificación',
-    repoUrl: '', // [EDITABLE: Colocar URL al iniciar implementación]
+    status: 'in-progress',
+    statusLabel: 'En Desarrollo / Repositorio Activo',
+    repoUrl: 'https://github.com/ManuCiber/Sistema-Facturacion',
     demoUrl: '',
     isFeatured: false
   }

@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
                 {personalInfo.name}
               </p>
               <p className="text-xs text-slate-500 font-mono">
-                Desarrollador Backend • Santo Domingo, RD
+                Software Developer (FullStack & Backend) • Santo Domingo, RD
               </p>
             </div>
           </div>
@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-white transition-colors"
-                aria-label="GitHub"
+                aria-label="GitHub (@ManuCiber)"
               >
                 <GithubIcon className="w-4 h-4" />
               </a>

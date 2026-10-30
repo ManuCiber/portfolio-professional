@@ -44,7 +44,7 @@ export const Skills: React.FC = () => {
             Habilidades & Tecnologías
           </h2>
           <p className="mt-3 text-slate-400 text-base sm:text-lg">
-            Perfil técnico con fuerte especialización en Backend y persistencia de datos, complementado con habilidades básicas de Frontend para la integración de interfaces.
+            Stack tecnológico con mayor fortaleza y profundidad en Backend, APIs y persistencia de datos, complementado con habilidades funcionales de Frontend en constante evolución FullStack.
           </p>
         </div>
 
@@ -53,19 +53,15 @@ export const Skills: React.FC = () => {
           <span className="text-slate-500">Nivel de competencia:</span>
           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-950/50 text-emerald-300 border border-emerald-500/30">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-            Dominio sólido (Backend/DB)
+            Dominio sólido
           </span>
           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-cyan-950/50 text-cyan-300 border border-cyan-500/30">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
-            Intermedio
-          </span>
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-blue-950/40 text-blue-300 border border-blue-500/30">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
-            Básico / Fundamentos (Frontend)
+            Intermedio / Funcional
           </span>
           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-amber-950/50 text-amber-300 border border-amber-500/30">
             <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-            En aprendizaje activo
+            En formación continua
           </span>
         </div>
 
@@ -119,9 +115,7 @@ export const Skills: React.FC = () => {
                           ? 'Sólido'
                           : skill.level === 'Intermedio'
                           ? 'Intermedio'
-                          : skill.level === 'Básico / Fundamentos'
-                          ? 'Básico'
-                          : 'Aprendiendo'}
+                          : 'Formación'}
                       </span>
                     </div>
                   ))}
@@ -139,15 +133,15 @@ export const Skills: React.FC = () => {
             </div>
             <div>
               <h4 className="text-sm font-semibold text-white">
-                Ruta de Expansión Técnica Activa: Java & Spring Boot
+                Rumbo al Perfil FullStack Completo
               </h4>
               <p className="text-xs text-slate-400 mt-0.5">
-                Profundizando en arquitectura de microservicios, Spring Security y persistencia distribuida con PostgreSQL y Docker.
+                Integrando una base sólida de Backend (Java Spring Boot, Node.js, Microservicios y SQL) con interfaces web fluidas y tipadas en Next.js 15 y React.
               </p>
             </div>
           </div>
           <span className="shrink-0 text-xs font-mono text-cyan-400 bg-cyan-950/60 px-3 py-1.5 rounded-md border border-cyan-500/30">
-            Roadmap 2026
+            FullStack Path
           </span>
         </div>
 
